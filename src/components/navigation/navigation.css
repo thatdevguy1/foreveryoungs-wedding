@@ -1,11 +1,29 @@
-ul{
+.nav{
     width: 100%;
+    margin: 25px 0 55px;
+    letter-spacing: 2px;
+    font-size: .9em;
     display: flex;
     justify-content: center;
+}
+
+ul{
+    width: 60%;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 li{
-    margin: 0 20px;
     text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #F4B824;
 }

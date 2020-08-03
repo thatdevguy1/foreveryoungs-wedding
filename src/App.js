@@ -11,7 +11,8 @@ import Photos from "./components/photos/photos";
 import Events from "./components/events/events";
 import WeddingParty from "./components/wedding-party/weddingParty";
 import Travel from "./components/travel/travel";
-import './App.css';
+import "./App.css";
+import yellowSlash from "./assets/yellow-slash.png";
 
 function App() {
   return (
@@ -19,12 +20,18 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <h1>DJ</h1>
-          <h3>and</h3>
-          <h1>Monique</h1>
+          <div className="heading">
+            <h1>DJ</h1>
+            <p>AND</p>
+            <h1>MONIQUE</h1>
+          </div>
         </Route>
         <Route path="/*">
-          <h1>DJ / Monique</h1> 
+          <div className="heading heading-secondary">
+            <h1 className="alt-heading">DJ</h1>
+            <img className="yellow-slash" src={yellowSlash} alt="heading split"/>
+            <h1 className="alt-heading">MONIQUE</h1> 
+          </div>
         </Route>
       </Switch>
       <Navigation />
@@ -41,7 +48,7 @@ function App() {
         <Route path="/events">
           <Events />
         </Route>
-        <Route path="/weddingparty">
+        <Route path="/wedding-party">
           <WeddingParty />
         </Route>
         <Route path="/travel">

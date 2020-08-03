@@ -1,19 +1,47 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "./navigation.css";
 
 const Navigation = () => {
     return ( 
-        <div>
+        <div className="nav">
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink exact={true}
+                            activeStyle={{
+                                color: "#F4B824"
+                            }}
+                        to="/">HOME</NavLink>
                 </li>
                 <li>
-                    <Link to="/photos">photos</Link>
+                    <NavLink activeStyle={{
+                                color: "#F4B824"
+                            }}
+                     to="/rsvp">RSVP</NavLink>
                 </li>
                 <li>
-                    <Link to="/rsvp">rsvp</Link>
+                    <NavLink activeStyle={{
+                                color: "#F4B824"
+                            }}
+                    to="/photos">PHOTOS</NavLink>
+                </li>
+                <li>
+                    <NavLink activeStyle={{
+                                color: "#F4B824"
+                            }}
+                     to="/events">EVENTS</NavLink>
+                </li>
+                <li>
+                    <NavLink activeStyle={{
+                                color: "#F4B824"
+                            }}
+                     to="/wedding-party">WEDDING PARTY</NavLink>
+                </li>
+                <li>
+                    <NavLink activeStyle={{
+                                color: "#F4B824"
+                            }}
+                     to="/travel">TRAVEL</NavLink>
                 </li>
             </ul>
         </div>

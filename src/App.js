@@ -13,8 +13,19 @@ import WeddingParty from "./components/wedding-party/weddingParty";
 import Travel from "./components/travel/travel";
 import "./App.css";
 import yellowSlash from "./assets/yellow-slash.png";
+import breakLine from "./assets/yellow-break.png";
 
 function App() {
+  const yellowBreakStyle = {
+    height: "50px",
+    width: "100vw",
+    backgroundImage: `url(${breakLine})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "repeat-x",
+    backgroundSize: "auto 50px",
+    marginBottom: "85px"
+  };
+
   return (
     <div className="App">
     <Router>
@@ -35,6 +46,14 @@ function App() {
         </Route>
       </Switch>
       <Navigation />
+      <Switch>
+        <Route exact path="/">
+        <div></div>
+        </Route>
+        <Route path="/*">
+        <div className="yellow-break" style={yellowBreakStyle}></div>
+        </Route>
+      </Switch>
       <Switch>
         <Route exact path="/">
           <Home />

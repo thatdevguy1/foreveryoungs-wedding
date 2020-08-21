@@ -9,10 +9,12 @@ const Travel = () => {
             <div className="squiggly-wrapper">
                 <img src={squiggly} alt="squiggly line"/>
             </div>
-            <h4>HOTEL TORONTO</h4>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Lorem, ipsum dolor.</p>
-            <a>VISIT WEBSITE</a>
+            <h4 className="hotel-name">HOTEL TORONTO</h4>
+            <span>Ask about our group rate.</span>
+            <p>Lorem ipsum dolor sit.
+               Lorem, ipsum dolor. 
+            </p>
+            <a className="visit-link">VISIT WEBSITE</a>
         </div>
      );
 }

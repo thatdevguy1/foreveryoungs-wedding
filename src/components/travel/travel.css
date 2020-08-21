@@ -4,3 +4,18 @@
     justify-content: center;
     align-items: center;
 }
+
+.hotel-name{
+    margin-bottom: 0;
+}
+
+span{
+    font-weight: 300;
+    letter-spacing: 1.6px;
+}
+
+.visit-link{
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+}

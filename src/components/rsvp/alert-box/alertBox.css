@@ -1,0 +1,8 @@
+.alert-box{
+    font-size: 1em;
+    text-align: center;
+    width: 482px;
+    padding: 10px 0;
+    margin-top: 20px;
+    transition: display 2s;
+}

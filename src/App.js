@@ -16,6 +16,7 @@ import yellowSlash from "./assets/yellow-slash.png";
 import breakLine from "./assets/yellow-break.png";
 
 function App() {
+  
   const yellowBreakStyle = {
     height: "50px",
     width: "100vw",

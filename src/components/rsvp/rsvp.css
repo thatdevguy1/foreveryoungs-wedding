@@ -15,7 +15,7 @@
     -ms-letter-spacing: normal;
     letter-spacing: normal;
     font-size: 14px;
-    width: 43%;
+    width: 482px;
     color: rgba(34,34,34,1.0);
     background-color: rgba(255,255,255,1.0);
     border-color: rgba(0,0,0,0.2);
@@ -42,7 +42,7 @@ button{
     letter-spacing: 3px;
     font-size: 14px;
     display: block;
-    width: 43%;
+    width: 482px;
     vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;

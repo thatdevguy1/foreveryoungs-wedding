@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useState, useRef, useEffect, useCallback, useMemo} from 'react';
 import axios from 'axios';
 import "./modal.css";
 
@@ -16,7 +16,7 @@ const Modal = (props) => {
 
     //ISSUE props.show after getting set to true never changes back to false.
     useEffect(()=>{
-
+        
         props.show ? setDisplayToggle("block") : setDisplayToggle("none");
 
     }, [props.show]);
@@ -78,7 +78,7 @@ const Modal = (props) => {
         <div className="modal" style={modalStyling}>
             <form className="modal-core" onSubmit={formHandler} ref={formRef}>
                 <span id="err-msg">{message}</span>
-                {createGuestList()}
+                {useMemo(() => createGuestList(), [props.rsvpResponse])}
                 <button className="confirm-btn" type="submit">Continue</button>
             </form>
         </div>

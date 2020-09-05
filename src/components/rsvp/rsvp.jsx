@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import axios from 'axios';
 import squiggly from "../../assets/yellow-squiggly.png";
 import "./rsvp.css";
@@ -6,22 +6,20 @@ import Modal from "./modal/modal"
 import AlertBox from "./alert-box/alertBox"
 
 const Rsvp = () => {
-    
+    useEffect(()=> {console.log("rsvp rendered")}, []);
     const [guest, setGuest] = useState([]);
     const [successMsg, setSuccessMsg] = useState(false);
 
-    //change state variable names
+    //******change state variable names
     const [validGuest, setValidGuest] = useState(false);
     let guestNameInput = useRef();
     let alertMessage = useRef();
 
     const findGuest = async () => {
-        console.log(guestNameInput.current.value);
         const response = await axios.get(`/api/findGuest?name=${guestNameInput.current.value}`);
 
         if(response) {
             setValidGuest(true);
-            console.log(`successful query ${JSON.stringify(response)}`);
             if(response.data.length > 0){
                 console.log("valid guest");
                 //Give response data name to Modal to display
@@ -56,7 +54,6 @@ const Rsvp = () => {
             alertMessage.current = "Success"
         } catch (err) {
             //set message to tell user rsvp didnt work
-            console.log("catch block reached");
             alertMessage.current = "Failed";
         };
 

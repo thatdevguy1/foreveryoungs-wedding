@@ -64,7 +64,8 @@ const Modal = (props) => {
 
             guestRsvp.push({
                 name: guest.name,
-                attending: formRef.current.elements[`rsvpOption-${index}`].value
+                attending: formRef.current.elements[`rsvpOption-${index}`].value,
+                group: guest.group
             });
         });
         if(success=== true){

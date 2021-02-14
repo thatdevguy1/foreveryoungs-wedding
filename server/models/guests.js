@@ -7,6 +7,9 @@ var GuestsSchema = mongoose.Schema({
     }, 
     attending: {
         type: Boolean
+    },
+    group: {
+        type: Number
     }
 });
 

@@ -1,72 +1,87 @@
 import React from 'react';
-import squiggly from "../../assets/yellow-squiggly.png";
 import "./weddingParty.css";
+import korina from "../../assets/korina.jpg"
+import sakina from "../../assets/sakina.jpg"
+import melanie from "../../assets/melanie.jpg"
+import mary from "../../assets/mary.jpg"
+import anna from "../../assets/anna.jpg"
+import jordan from "../../assets/jordan.jpg"
+import phil from "../../assets/phil.jpg"
+import david from "../../assets/david.jpeg"
 
 const WeddingParty = () => {
     return ( 
         <div className="wedding-party">
-            <h3>WEDDING PARTY</h3>
-            <div className="squiggly-wrapper">
-                <img src={squiggly} alt="squiggly line"/>
-            </div>
-            <div className="about-me">
-                <div className="portrait">
-                    <img src="" alt="wedding party member" />
+            {/* <h3>WEDDING PARTY</h3> */}
+            <h3>BRIDAL PARTY</h3>
+            <div className="bridesmaids wp-section">
+                <div className="about-me">
+                    <div className="info">
+                        <h4>Korina</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={korina} alt="wedding party member" />
+                    </div>
                 </div>
-                <div className="info">
-                    <h4>PERSONS NAME</h4>
-                    <h5>TITLE</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis corporis, nam, voluptatem minima excepturi cumque facilis soluta mollitia natus reiciendis optio incidunt odit. Magni aperiam laboriosam natus velit recusandae ullam rerum quae eum, itaque nesciunt harum voluptatibus molestias dolores similique dolor sunt dolorem explicabo fugit, quisquam autem minima? Ut.</p>
+                <div className="about-me">
+                    <div className="info">
+                        <h4>Sakina</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={sakina} alt="wedding party member" />
+                    </div>
                 </div>
-            </div>
-            <div className="about-me">
-                <div className="portrait">
-                    <img src="" alt="wedding party member" />
+                <div className="about-me">
+                    <div className="info">
+                        <h4>Melanie</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={melanie} alt="wedding party member" />
+                    </div>
                 </div>
-                <div className="info">
-                    <h4>PERSONS NAME</h4>
-                    <h5>TITLE</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officia, quod suscipit corporis ipsa, sed explicabo modi veniam delectus magni quibusdam! Asperiores illum aspernatur sunt ducimus dignissimos, quis assumenda illo omnis nesciunt sequi eum suscipit natus voluptatem. Sit, optio quaerat? Nisi dignissimos in quaerat at, voluptates eveniet enim doloremque sint.</p>
+                <div className="about-me">
+                    <div className="info">
+                        <h4>Mary</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={mary} alt="wedding party member" />
+                    </div>
                 </div>
-            </div>
-            <div className="about-me">
-                <div className="portrait">
-                    <img src="" alt="wedding party member" />
-                </div>
-                <div className="info">
-                    <h4>PERSONS NAME</h4>
-                    <h5>TITLE</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officia, quod suscipit corporis ipsa, sed explicabo modi veniam delectus magni quibusdam! Asperiores illum aspernatur sunt ducimus dignissimos, quis assumenda illo omnis nesciunt sequi eum suscipit natus voluptatem. Sit, optio quaerat? Nisi dignissimos in quaerat at, voluptates eveniet enim doloremque sint.</p>
-                </div>
-            </div>
-            <div className="about-me">
-                <div className="portrait">
-                    <img src="" alt="wedding party member" />
-                </div>
-                <div className="info">
-                    <h4>PERSONS NAME</h4>
-                    <h5>TITLE</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officia, quod suscipit corporis ipsa, sed explicabo modi veniam delectus magni quibusdam! Asperiores illum aspernatur sunt ducimus dignissimos, quis assumenda illo omnis nesciunt sequi eum suscipit natus voluptatem. Sit, optio quaerat? Nisi dignissimos in quaerat at, voluptates eveniet enim doloremque sint.</p>
-                </div>
-            </div>
-            <div className="about-me">
-                <div className="portrait">
-                    <img src="" alt="wedding party member" />
-                </div>
-                <div className="info">
-                    <h4>PERSONS NAME</h4>
-                    <h5>TITLE</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officia, quod suscipit corporis ipsa, sed explicabo modi veniam delectus magni quibusdam! Asperiores illum aspernatur sunt ducimus dignissimos, quis assumenda illo omnis nesciunt sequi eum suscipit natus voluptatem. Sit, optio quaerat? Nisi dignissimos in quaerat at, voluptates eveniet enim doloremque sint.</p>
+                <div className="about-me">
+                    <div className="info">
+                        <h4>Anna</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={anna} alt="wedding party member" />
+                    </div>
                 </div>
             </div>
-            <div className="about-me">
-                <div className="portrait">
-                    <img src="" alt="wedding party member" />
+
+            <h3>GROOMSMEN</h3>
+            <div className="groomsmen wp-section">
+                <div className="about-me">
+                    <div className="info">
+                        <h4>Jordan</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={jordan} alt="wedding party member" />
+                    </div>
                 </div>
-                <div className="info">
-                    <h4>PERSONS NAME</h4>
-                    <h5>TITLE</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero officia, quod suscipit corporis ipsa, sed explicabo modi veniam delectus magni quibusdam! Asperiores illum aspernatur sunt ducimus dignissimos, quis assumenda illo omnis nesciunt sequi eum suscipit natus voluptatem. Sit, optio quaerat? Nisi dignissimos in quaerat at, voluptates eveniet enim doloremque sint.</p>
+                <div className="about-me">
+                    <div className="info">
+                        <h4>Phil</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={phil} alt="wedding party member" />
+                    </div>
+                </div>
+                <div className="about-me">
+                    <div className="info">
+                        <h4>David</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={david} alt="wedding party member" />
+                    </div>
                 </div>
             </div>
         </div>

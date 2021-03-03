@@ -1,5 +1,4 @@
 import React from 'react';
-import squiggly from "../../assets/yellow-squiggly.png";
 import "./photos.css";
 import pic1 from "../../assets/picture1.jpg";
 import pic2 from "../../assets/picture2.jpg";
@@ -24,9 +23,6 @@ const Photos = () => {
     return ( 
         <div className="photos">
             <h3>PHOTOS</h3>
-            <div className="squiggly-wrapper">
-                <img src={squiggly} alt="squiggly line"/>
-            </div>
             <div className="gallery">
                 <div className="pic tall" style={backgroundSetter(1)}></div>
                 <div className="pic" style={backgroundSetter(4)}></div>

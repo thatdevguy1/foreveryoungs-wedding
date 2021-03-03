@@ -33,14 +33,14 @@ function App() {
       <Switch>
         <Route exact path="/">
           <div className="heading">
-            <h1>DJ</h1>
+            <h1>DANIEL</h1>
             <p>AND</p>
             <h1>MONIQUE</h1>
           </div>
         </Route>
         <Route path="/*">
           <div className="heading heading-secondary">
-            <h1 className="alt-heading">DJ</h1>
+            <h1 className="alt-heading">DANIEL</h1>
             <img className="yellow-slash" src={yellowSlash} alt="heading split"/>
             <h1 className="alt-heading">MONIQUE</h1> 
           </div>

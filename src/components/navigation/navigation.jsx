@@ -29,7 +29,7 @@ const Navigation = () => {
                     <NavLink activeStyle={{
                                 color: "#F4B824"
                             }}
-                     to="/events">EVENTS</NavLink>
+                     to="/events">DAY OF</NavLink>
                 </li>
                 <li>
                     <NavLink activeStyle={{

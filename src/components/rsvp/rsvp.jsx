@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
-import squiggly from "../../assets/yellow-squiggly.png";
 import "./rsvp.css";
 import Modal from "./modal/modal";
 import AlertBox from "./alert-box/alertBox";
+import rsvpImg from "../../assets/rsvp.png";
 
 const Rsvp = () => {
   useEffect(() => {
@@ -73,15 +73,15 @@ const Rsvp = () => {
     <div className="rsvp">
       <h3>RSVP</h3>
       <div className="squiggly-wrapper">
-        <img src={squiggly} alt="squiggly line" />
+        <img src={rsvpImg} alt="squiggly line" />
       </div>
       <p>
         We appreciate everyone who have confirmed attendance to join us on our
-        special day. However due to the continuously evolving s ituation, we may
+        special day.<br/> However due to the continuously evolving situation, we may
         have to limit our guest count based on the current gathering
         restrictions.
       </p>
-      <p>For thos ewho cannot attend place celebrate with us virtually:</p>
+      <p>For those who cannot attend, please celebrate with us virtually via this link:<br/> LINK COMING SOON</p>
       <h4>ENTER THE NAME ON YOUR INVITATION</h4>
       <input
         className="rsvp-input"

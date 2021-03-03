@@ -24,7 +24,7 @@ function App() {
     backgroundPosition: "center",
     backgroundRepeat: "repeat-x",
     backgroundSize: "auto 50px",
-    marginBottom: "85px"
+    marginBottom: "15px"
   };
 
   return (

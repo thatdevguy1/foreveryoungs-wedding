@@ -37,12 +37,12 @@ const Navigation = () => {
                             }}
                      to="/wedding-party">WEDDING PARTY</NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <NavLink activeStyle={{
                                 color: "#F4B824"
                             }}
                      to="/travel">TRAVEL</NavLink>
-                </li>
+                </li> */}
             </ul>
         </div>
      );

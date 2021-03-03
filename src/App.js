@@ -71,9 +71,9 @@ function App() {
         <Route path="/wedding-party">
           <WeddingParty />
         </Route>
-        <Route path="/travel">
+        {/* <Route path="/travel">
           <Travel />
-        </Route>
+        </Route> */}
       </Switch>
     </Router>
     </div>

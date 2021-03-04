@@ -90,7 +90,7 @@ const WeddingParty = () => {
                         <h4>Imran</h4>
                     </div>
                     <div className="portrait">
-                        <img src={imran} alt="wedding party member" />
+                        <img className="imran" src={imran} alt="wedding party member" />
                     </div>
                 </div>
                 <div className="about-me">

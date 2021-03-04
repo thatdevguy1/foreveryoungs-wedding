@@ -8,6 +8,8 @@ import anna from "../../assets/anna.jpg"
 import jordan from "../../assets/jordan.jpg"
 import phil from "../../assets/phil.jpg"
 import david from "../../assets/david.jpeg"
+import davidd from "../../assets/davidd.jpg"
+import imran from "../../assets/imran.jpg"
 
 const WeddingParty = () => {
     return ( 
@@ -72,7 +74,7 @@ const WeddingParty = () => {
                         <h4>Phil</h4>
                     </div>
                     <div className="portrait">
-                        <img src={phil} alt="wedding party member" />
+                        <img src={phil} className="phil" alt="wedding party member" />
                     </div>
                 </div>
                 <div className="about-me">
@@ -81,6 +83,22 @@ const WeddingParty = () => {
                     </div>
                     <div className="portrait">
                         <img src={david} alt="wedding party member" />
+                    </div>
+                </div>
+                <div className="about-me">
+                    <div className="info">
+                        <h4>Imran</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={imran} alt="wedding party member" />
+                    </div>
+                </div>
+                <div className="about-me">
+                    <div className="info">
+                        <h4>David</h4>
+                    </div>
+                    <div className="portrait">
+                        <img src={davidd} alt="wedding party member" />
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ const Home = () => {
             <div className="hero-img shadow" style={heroStyling}>
             </div>
             <h3 className="header italic">Please join us for our wedding celebration on</h3>
-            <h3 className="header primary-text">AUGUST 24, 2023</h3>
+            <h3 className="header primary-text">JUNE 15, 2021</h3>
         </div>
      );
 }

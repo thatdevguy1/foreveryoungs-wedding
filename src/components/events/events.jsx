@@ -8,12 +8,13 @@ const Events = () => {
     <div className="events">
       <h3>DAY OF</h3>
       <div className="event-info">
-        <p>J U N E 5, &nbsp; 2 0 2 1&nbsp; a t&nbsp; 1 0 : 3 0 a m</p>
-        <p>P A L E T T A&nbsp; M A N S I O N</p>
-        <p>
+        <p className="subhead">J U N E &nbsp; 5, &nbsp; 2 0 2 1&nbsp; a t&nbsp; 1 0 : 3 0 a m</p>
+        <p><span className="subhead">P A L E T T A&nbsp; M A N S I O N</span> <br/>
           4250 Lakeshore Blvd. <br/> 
           Burlington, ON, L7L 1A6
         </p>
+      
+        
         <div className="squiggly-wrapper">
         <img src={dayofImg} alt="squiggly line" />
       </div>

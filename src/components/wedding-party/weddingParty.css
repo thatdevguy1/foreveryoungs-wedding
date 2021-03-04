@@ -6,17 +6,16 @@
 }
 
 .about-me{
-    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px 20px 30px;
+    margin: 20px 10px 30px;
     align-items: center
 }
 
 .portrait{
     max-height:300px;
-    width: 300px;
+    max-width: 270px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -39,8 +38,12 @@
 .wp-section{
     width: 100vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 150px;
+    margin-bottom: 40px;
 }
 
+img.phil{
+    height: 499px;
+    transform: translateY(-110px);
+}

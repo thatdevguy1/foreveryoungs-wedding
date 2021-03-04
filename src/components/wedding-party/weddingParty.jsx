@@ -79,7 +79,7 @@ const WeddingParty = () => {
                 </div>
                 <div className="about-me">
                     <div className="info">
-                        <h4>David</h4>
+                        <h4>David B</h4>
                     </div>
                     <div className="portrait">
                         <img src={david} alt="wedding party member" />
@@ -95,7 +95,7 @@ const WeddingParty = () => {
                 </div>
                 <div className="about-me">
                     <div className="info">
-                        <h4>David</h4>
+                        <h4>David D</h4>
                     </div>
                     <div className="portrait">
                         <img src={davidd} alt="wedding party member" />

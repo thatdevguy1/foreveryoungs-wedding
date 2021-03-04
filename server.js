@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const api = require("./server/routes/api");
-//const dotenv = require('dotenv');
+require('dotenv').config();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
@@ -19,9 +19,19 @@ app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "build/index.html"));
 });
 
-/* MONGOOSE CONNECT */
-const db = "mongodb://localhost:27017/foreveryoungs";
-mongoose.Promise = global.Promise;
+ /* MONGOOSE CONNECT */
+ const db = process.env.DB_CONNECT;
+ mongoose.Promise = global.Promise;
 
-/* LISTEN TO SERVER ON MONGOOSE SUCCESS */
-app.listen(port, () => console.log(`app listening on port ${port}!`));
+mongoose.connect(db, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }, function(err){
+        if(err){
+        console.error("Error! " + err);
+     }
+}).then(result => {
+  /* LISTEN TO SERVER ON MONGOOSE SUCCESS */
+  app.listen(port, () => console.log(`app listening on port ${port}!`));
+})
+.catch(err => console.log(err));

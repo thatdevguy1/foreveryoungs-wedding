@@ -62,3 +62,17 @@
     color: red;
     align-self: center;
 }
+
+.guest-name-wrap{
+    max-width: 45%;
+}
+
+@media only screen and (max-width: 550px) {
+    .modal-core{
+        width: 90vw;
+    }
+
+    .guest-row{
+        width: 90vw;
+    }
+  }

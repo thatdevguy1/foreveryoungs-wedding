@@ -40,8 +40,13 @@ p{
 }
 
 .squiggly-wrapper > img {
-  width: 60vw;
+  width: 100%;
   margin-bottom: 30px;
+}
+
+.squiggly-wrapper{
+  width: 60vw;
+  margin: auto;
 }
 
 h3{

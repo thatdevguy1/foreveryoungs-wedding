@@ -5,6 +5,7 @@
     font-size: .9em;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 ul{
@@ -13,6 +14,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 li{
@@ -27,3 +29,26 @@ a{
 a:hover{
     color: #F4B824;
 }
+
+@media only screen and (max-width: 800px) {
+    ul{
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 470px) {
+    ul{
+        justify-content: center;
+    }
+
+    li{
+        margin: 12px;
+    }
+  }
+
+
+@media only screen and (max-width: 370px) {
+    li{
+        font-size: 11px;
+    }
+  }

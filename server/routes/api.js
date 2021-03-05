@@ -8,7 +8,7 @@ router.get("/api/findGuest", (req, res) => {
     const name = req.query.name;
     console.log(req.query);
     if(req.query.name !== "plus 1"){
-        Guest.findOne({name : name}, (err, guest) => {
+        Guest.findOne({name : {$regex : new RegExp(name, "i")}}, (err, guest) => {
             if (err) {
                 console.log(err);
                 //500 might not be the right code **look into this.

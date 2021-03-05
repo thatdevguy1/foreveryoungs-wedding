@@ -5,11 +5,11 @@ import sakina from "../../assets/sakina.jpg"
 import melanie from "../../assets/melanie.jpg"
 import mary from "../../assets/mary.jpg"
 import anna from "../../assets/anna.jpg"
-import jordan from "../../assets/jordan.jpg"
+import jordan from "../../assets/jordan.png"
 import phil from "../../assets/phil.jpg"
 import david from "../../assets/david.jpeg"
-import davidd from "../../assets/davidd.jpg"
-import imran from "../../assets/imran.jpg"
+import davidd from "../../assets/doraz.jpg"
+import imran from "../../assets/imran.png"
 
 const WeddingParty = () => {
     return ( 

@@ -10,11 +10,11 @@ const Home = () => {
         backgroundSize: "cover"
     }
     return ( 
-        <div classname="Home">
+        <div className="Home">
             <div className="hero-img shadow" style={heroStyling}>
             </div>
             <h3 className="header italic">Please join us for our wedding celebration on</h3>
-            <h3 className="header primary-text">JUNE 15, 2021</h3>
+            <h3 className="header primary-text">JUNE 5, 2021</h3>
         </div>
      );
 }

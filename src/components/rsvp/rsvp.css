@@ -57,4 +57,15 @@ button{
     color: #fff;
     background-color: #4d4845;
     border-radius: 0;
+    margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 482px) {
+    button{
+        width: 90%;
+    }
+
+    .rsvp-input{
+        width: 90%;
+    }
+  }
